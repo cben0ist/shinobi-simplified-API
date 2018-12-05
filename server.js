@@ -30,7 +30,8 @@ function setMonitor(key, monitor, group, monitorJson, detectorValue) {
   // Set new value
   let details = JSON.parse(monitorJson.details);
   details.detector = detectorValue;
-  monitorJson.details = JSON.stringify(details);
+  //monitorJson.details = JSON.stringify(details);
+  monitorJson.details = details;
 
   // Remove extra keys
   delete monitorJson['currentlyWatching'];
